@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1250.0" stylesheets="@../Styles/formateurs.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FormateursController">
+   <children>
+      <JFXTabPane prefHeight="650.0" prefWidth="1250.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Gestions des formateurs">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" layoutX="482.0" layoutY="36.0" prefHeight="85.0" prefWidth="258.0" style="-fx-background-radius: 20;">
+                           <children>
+                              <VBox prefHeight="105.0" prefWidth="20.0" styleClass="dark-primary-bg">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                              <ImageView fitHeight="64.0" fitWidth="66.0">
+                                 <image>
+                                    <Image url="@../Icones/icons8_Classroom_96px.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label prefHeight="80.0" prefWidth="161.0" text="7840 educateurs scolaire" textAlignment="CENTER" wrapText="true">
+                                 <styleClass>
+                                    <String fx:value="h4" />
+                                    <String fx:value="b" />
+                                    <String fx:value="text-white" />
+                                 </styleClass>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </Label>
+                           </children>
+                           <styleClass>
+                              <String fx:value="light-blue-bg" />
+                              <String fx:value="shadowed-box" />
+                           </styleClass>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="818.0" layoutY="36.0" prefHeight="85.0" prefWidth="275.0" style="-fx-background-color: purple; -fx-background-radius: 20;" styleClass="shadowed-box">
+                           <children>
+                              <VBox prefHeight="105.0" prefWidth="19.0" styleClass="dark-purple" />
+                              <ImageView fitHeight="66.0" fitWidth="64.0">
+                                 <image>
+                                    <Image url="@../Icones/icons8_Student_Male_96px.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="85.0" prefWidth="141.0" text="13 000 Formateurs" textAlignment="CENTER" wrapText="true">
+                                 <styleClass>
+                                    <String fx:value="h4" />
+                                    <String fx:value="b" />
+                                    <String fx:value="text-white" />
+                                 </styleClass>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="142.0" layoutY="36.0" prefHeight="83.0" prefWidth="283.0" style="-fx-background-radius: 20;">
+                           <children>
+                              <VBox prefHeight="105.0" prefWidth="20.0" style="-fx-background-color: black;" styleClass="dark-primary-bg" />
+                              <ImageView fitHeight="71.0" fitWidth="67.0">
+                                 <image>
+                                    <Image url="@../Icones/icons8_Graduate_96px.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="55.0" prefWidth="181.0" text="15 000 Beneficiaire en 2018" textAlignment="CENTER" wrapText="true">
+                                 <styleClass>
+                                    <String fx:value="h4" />
+                                    <String fx:value="b" />
+                                    <String fx:value="text-white" />
+                                 </styleClass>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </Label>
+                           </children>
+                           <styleClass>
+                              <String fx:value="primary-bg" />
+                              <String fx:value="darkened-bg" />
+                              <String fx:value="shadowed-box" />
+                           </styleClass>
+                        </HBox>
+                        <TableView layoutX="25.0" layoutY="216.0" prefHeight="385.0" prefWidth="840.0" tableMenuButtonVisible="true">
+                           <columns>
+                              <TableColumn prefWidth="125.0" text="Nom" />
+                              <TableColumn prefWidth="119.0" text="Date de naissance" />
+                              <TableColumn prefWidth="119.0" text="Date de Formation" />
+                              <TableColumn prefWidth="119.0" text="N° Attestation" />
+                              <TableColumn prefWidth="104.0" text="telephone" />
+                              <TableColumn prefWidth="125.0" text="email" />
+                              <TableColumn prefWidth="125.0" text="Centre" />
+                           </columns>
+                        </TableView>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="26.0" layoutY="148.0" prefHeight="25.0" prefWidth="843.0" style="-fx-background-radius: 20; -fx-background-color: orange;" text="Liste des Formateurs">
+                           <styleClass>
+                              <String fx:value="h5" />
+                              <String fx:value="b" />
+                              <String fx:value="shadowed-box" />
+                           </styleClass>
+                        </Label>
+                        <TextField layoutX="26.0" layoutY="179.0" prefHeight="25.0" prefWidth="259.0" promptText="chercher un formateur" styleClass="search-box" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="884.0" layoutY="148.0" prefHeight="25.0" prefWidth="288.0" style="-fx-background-radius: 20;" text="Creer une Statistique">
+                           <styleClass>
+                              <String fx:value="h5" />
+                              <String fx:value="b" />
+                              <String fx:value="shadowed-box" />
+                              <String fx:value="light-gray-bg" />
+                           </styleClass>
+                        </Label>
+                        <JFXButton layoutX="670.0" layoutY="177.0" onAction="#add_formateur" prefHeight="30.0" prefWidth="195.0" style="-fx-background-radius: 20;" text="Ajouter un formateur">
+                           <styleClass>
+                              <String fx:value="hand-hover" />
+                              <String fx:value="h5" />
+                              <String fx:value="b" />
+                              <String fx:value="danger-bg" />
+                           </styleClass>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="18.0">
+                                 <image>
+                                    <Image url="@../Icones/icons8_Plus_52px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <AnchorPane id="details" layoutX="884.0" layoutY="209.0" prefHeight="333.0" prefWidth="299.0" style="-fx-background-color: white;" styleClass="shadowed-box">
+                           <children>
+                              <GridPane layoutX="21.0" layoutY="10.0" prefHeight="270.0" prefWidth="247.0">
+                                 <children>
+                                    <Label prefHeight="27.0" prefWidth="158.0" styleClass="b" text="Pays" GridPane.rowIndex="2" />
+                                    <ChoiceBox fx:id="niveaux1" prefHeight="26.0" prefWidth="170.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label prefHeight="27.0" prefWidth="158.0" styleClass="b" text="Sexe" GridPane.rowIndex="7" />
+                                    <ChoiceBox fx:id="periode1" prefHeight="26.0" prefWidth="170.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <Label prefHeight="27.0" prefWidth="158.0" styleClass="b" text="Type de filtre" GridPane.rowIndex="1" />
+                                    <ChoiceBox fx:id="years1" prefHeight="26.0" prefWidth="170.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label prefHeight="27.0" prefWidth="158.0" styleClass="b" text="Tranche d'age" GridPane.rowIndex="8" />
+                                    <ChoiceBox fx:id="periode11" prefHeight="26.0" prefWidth="170.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                    <Label prefHeight="27.0" prefWidth="158.0" styleClass="b" text="Provinces" GridPane.rowIndex="3" />
+                                    <ChoiceBox fx:id="niveaux11" prefHeight="26.0" prefWidth="170.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <Label prefHeight="27.0" prefWidth="158.0" styleClass="b" text="Centres" GridPane.rowIndex="4" />
+                                    <ChoiceBox fx:id="niveaux111" prefHeight="26.0" prefWidth="170.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <Label prefHeight="27.0" prefWidth="158.0" styleClass="b" text="Secteurs" GridPane.rowIndex="5" />
+                                    <ChoiceBox fx:id="niveaux1111" prefHeight="26.0" prefWidth="170.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <Label prefHeight="27.0" prefWidth="158.0" styleClass="b" text="Structures" GridPane.rowIndex="6" />
+                                    <ChoiceBox fx:id="niveaux11111" prefHeight="26.0" prefWidth="170.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <Label prefHeight="27.0" prefWidth="178.0" styleClass="b" text="Année" />
+                                    <ChoiceBox fx:id="dataType21" prefHeight="26.0" prefWidth="170.0" GridPane.columnIndex="1" />
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="179.0" minWidth="10.0" prefWidth="111.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="263.0" minWidth="10.0" prefWidth="165.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <JFXButton layoutX="54.0" layoutY="289.0" prefHeight="30.0" prefWidth="207.0" style="-fx-background-radius: 50;" text="voir la statistique">
+                                 <graphic>
+                                    <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                       <effect>
+                                          <DropShadow height="35.83" radius="12.225" spread="0.66" width="15.07" />
+                                       </effect>
+                                       <image>
+                                          <Image url="@../Icones/icons8_Hand_Up_48px_1.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="hand-hover" />
+                                    <String fx:value="h5" />
+                                    <String fx:value="b" />
+                                    <String fx:value="primary-bg" />
+                                 </styleClass>
+                              </JFXButton>
+                           </children>
+                        </AnchorPane>
+                        <JFXButton layoutX="445.0" layoutY="178.0" onAction="#see_forma" prefHeight="28.0" prefWidth="219.0" style="-fx-background-radius: 20;" text="Afficher les detail du formateur">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="18.0">
+                                 <image>
+                                    <Image url="@../Icones/icons8_Eye_48px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="hand-hover" />
+                              <String fx:value="b" />
+                              <String fx:value="success-bg" />
+                           </styleClass>
+                        </JFXButton>
+                        <AnchorPane fx:id="forma_modal" layoutX="279.0" layoutY="51.0" prefHeight="509.0" prefWidth="545.0" style="-fx-background-color: white;" visible="false">
+                           <children>
+                              <JFXButton layoutX="495.0" layoutY="8.0" onAction="#close_fomateur" prefHeight="33.0" prefWidth="40.0" styleClass="hand-hover" text=" ">
+                                 <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="24.0" onMouseClicked="#close_fomateur">
+                                       <image>
+                                          <Image url="@../Icones/icons8_Delete_96px_2.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <VBox alignment="CENTER" layoutX="22.0" layoutY="67.0" prefHeight="439.0" prefWidth="509.0" spacing="15.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <GridPane alignment="BOTTOM_CENTER" prefHeight="379.0" prefWidth="509.0">
+                                       <children>
+                                          <JFXTextField focusColor="#00c0ef" maxWidth="524.0" minWidth="252.0" prefHeight="36.0" prefWidth="252.0" promptText="Nom Complet" unFocusColor="#656464" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </JFXTextField>
+                                          <VBox prefHeight="53.0" prefWidth="271.0">
+                                             <children>
+                                                <Label prefHeight="33.0" prefWidth="230.0" text="Date du Remise de Diplome" textFill="#837f7f">
+                                                   <padding>
+                                                      <Insets left="15.0" />
+                                                   </padding>
+                                                </Label>
+                                                <DatePicker prefHeight="28.0" prefWidth="169.0">
+                                                   <VBox.margin>
+                                                      <Insets left="15.0" />
+                                                   </VBox.margin>
+                                                </DatePicker>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="53.0" prefWidth="271.0" GridPane.columnIndex="1">
+                                             <children>
+                                                <Label prefHeight="33.0" prefWidth="230.0" text="Date de Naissance" textFill="#837f7f">
+                                                   <padding>
+                                                      <Insets left="15.0" />
+                                                   </padding>
+                                                </Label>
+                                                <DatePicker prefHeight="28.0" prefWidth="169.0">
+                                                   <VBox.margin>
+                                                      <Insets left="15.0" />
+                                                   </VBox.margin>
+                                                </DatePicker>
+                                             </children>
+                                          </VBox>
+                                          <JFXTextField focusColor="#00c0ef" maxWidth="524.0" minWidth="205.0" prefHeight="36.0" prefWidth="205.0" promptText="email" unFocusColor="#656464" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </JFXTextField>
+                                          <JFXTextField focusColor="#00c0ef" labelFloat="true" maxWidth="524.0" minWidth="252.0" prefHeight="36.0" prefWidth="252.0" promptText="Numero Attestation" unFocusColor="#656464" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </JFXTextField>
+                                          <VBox prefHeight="53.0" prefWidth="271.0" GridPane.rowIndex="6">
+                                             <children>
+                                                <Label prefHeight="33.0" prefWidth="192.0" text="Sexe" textFill="#837f7f">
+                                                   <padding>
+                                                      <Insets left="15.0" />
+                                                   </padding>
+                                                </Label>
+                                                <ChoiceBox fx:id="dataType211" prefHeight="26.0" prefWidth="194.0">
+                                                   <VBox.margin>
+                                                      <Insets left="15.0" />
+                                                   </VBox.margin>
+                                                </ChoiceBox>
+                                             </children>
+                                          </VBox>
+                                          <JFXTextField focusColor="#00c0ef" labelFloat="true" maxWidth="524.0" minWidth="205.0" prefHeight="36.0" prefWidth="205.0" promptText="telephone" unFocusColor="#656464" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </JFXTextField>
+                                          <JFXTextField focusColor="#00c0ef" labelFloat="true" maxWidth="524.0" minWidth="188.0" prefHeight="36.0" prefWidth="188.0" promptText="Centre" unFocusColor="#656464" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </JFXTextField>
+                                          <JFXTextField focusColor="#00c0ef" labelFloat="true" maxWidth="524.0" minWidth="252.0" prefHeight="36.0" prefWidth="252.0" promptText="Pays" unFocusColor="#656464" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </JFXTextField>
+                                          <JFXTextField focusColor="#00c0ef" labelFloat="true" maxWidth="524.0" minWidth="205.0" prefHeight="36.0" prefWidth="205.0" promptText="Province de Formation" unFocusColor="#656464" GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.valignment="BOTTOM">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </JFXTextField>
+                                          <VBox prefHeight="73.0" prefWidth="297.0" GridPane.rowIndex="5">
+                                             <children>
+                                                <Label prefHeight="33.0" prefWidth="192.0" text="Secteur d'activité" textFill="#837f7f">
+                                                   <padding>
+                                                      <Insets left="15.0" />
+                                                   </padding>
+                                                </Label>
+                                                <ChoiceBox fx:id="dataType2111" prefHeight="26.0" prefWidth="196.0">
+                                                   <VBox.margin>
+                                                      <Insets left="15.0" />
+                                                   </VBox.margin>
+                                                </ChoiceBox>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="53.0" prefWidth="271.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                             <children>
+                                                <Label prefHeight="33.0" prefWidth="192.0" text="Structure" textFill="#837f7f">
+                                                   <padding>
+                                                      <Insets left="15.0" />
+                                                   </padding>
+                                                </Label>
+                                                <ChoiceBox fx:id="dataType21111" prefHeight="26.0" prefWidth="196.0">
+                                                   <VBox.margin>
+                                                      <Insets left="15.0" />
+                                                   </VBox.margin>
+                                                </ChoiceBox>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="53.0" prefWidth="271.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                             <children>
+                                                <Label prefHeight="33.0" prefWidth="192.0" text="Type de Formateur" textFill="#837f7f">
+                                                   <padding>
+                                                      <Insets left="15.0" />
+                                                   </padding>
+                                                </Label>
+                                                <ChoiceBox fx:id="dataType2112" prefHeight="26.0" prefWidth="194.0">
+                                                   <VBox.margin>
+                                                      <Insets left="15.0" />
+                                                   </VBox.margin>
+                                                </ChoiceBox>
+                                             </children>
+                                          </VBox>
+                                          <JFXTextField focusColor="#00c0ef" labelFloat="true" maxWidth="524.0" minWidth="205.0" prefHeight="36.0" prefWidth="205.0" promptText="Adresse" unFocusColor="#656464" GridPane.rowIndex="4">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </JFXTextField>
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="297.0" minWidth="10.0" prefWidth="294.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="263.0" minWidth="10.0" prefWidth="148.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="73.0" minHeight="10.0" prefHeight="65.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="70.0" minHeight="7.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="135.0" minHeight="0.0" prefHeight="57.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="111.0" minHeight="0.0" prefHeight="59.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="103.0" minHeight="6.0" prefHeight="52.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="103.0" minHeight="10.0" prefHeight="57.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="99.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                    <AnchorPane prefHeight="52.0" prefWidth="509.0">
+                                       <children>
+                                          <JFXButton layoutX="72.0" layoutY="5.0" prefHeight="33.0" prefWidth="157.0" text="Enregister">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="18.0">
+                                                   <image>
+                                                      <Image url="@../Icones/icons8_Plus_52px.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <styleClass>
+                                                <String fx:value="hand-hover" />
+                                                <String fx:value="h5" />
+                                                <String fx:value="b" />
+                                                <String fx:value="danger-bg" />
+                                             </styleClass>
+                                          </JFXButton>
+                                          <JFXButton layoutX="306.0" layoutY="7.0" onAction="#close_fomateur" prefHeight="33.0" prefWidth="116.0" text="Fermer">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="18.0">
+                                                   <image>
+                                                      <Image url="@../Icones/icons8_Close_Window_52px.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <styleClass>
+                                                <String fx:value="hand-hover" />
+                                                <String fx:value="h5" />
+                                                <String fx:value="b" />
+                                                <String fx:value="darkened-bg" />
+                                                <String fx:value="text-white" />
+                                             </styleClass>
+                                          </JFXButton>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </VBox>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="35.0" prefHeight="0.0" prefWidth="527.0" style="-fx-font-size: 14pt; -fx-font-weight: bold;" text="Nouveau Formateur" textAlignment="CENTER" />
+                           </children>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </AnchorPane>
+                        <AnchorPane fx:id="forma_see" layoutX="289.0" layoutY="61.0" prefHeight="509.0" prefWidth="545.0" style="-fx-background-color: white;" visible="false">
+                           <children>
+                              <JFXButton layoutX="495.0" layoutY="8.0" onAction="#close_see" prefHeight="33.0" prefWidth="40.0" styleClass="hand-hover" text=" ">
+                                 <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="24.0" onMouseClicked="#close_fomateur">
+                                       <image>
+                                          <Image url="@../Icones/icons8_Delete_96px_2.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <VBox alignment="CENTER" layoutX="22.0" layoutY="67.0" prefHeight="439.0" prefWidth="509.0" spacing="15.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <GridPane alignment="BOTTOM_CENTER" prefHeight="379.0" prefWidth="509.0">
+                                       <children>
+                                          <JFXTextField disable="true" editable="false" focusColor="#00c0ef" maxWidth="524.0" minWidth="252.0" prefHeight="36.0" prefWidth="252.0" promptText="Nom Complet" unFocusColor="BLACK" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </JFXTextField>
+                                          <VBox prefHeight="53.0" prefWidth="271.0">
+                                             <children>
+                                                <Label prefHeight="33.0" prefWidth="230.0" text="Date du Remise de Diplome" textFill="#837f7f">
+                                                   <padding>
+                                                      <Insets left="15.0" />
+                                                   </padding>
+                                                </Label>
+                                                <DatePicker editable="false" prefHeight="28.0" prefWidth="169.0">
+                                                   <VBox.margin>
+                                                      <Insets left="15.0" />
+                                                   </VBox.margin>
+                                                </DatePicker>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="53.0" prefWidth="271.0" GridPane.columnIndex="1">
+                                             <children>
+                                                <Label prefHeight="33.0" prefWidth="230.0" text="Date de Naissance" textFill="#837f7f">
+                                                   <padding>
+                                                      <Insets left="15.0" />
+                                                   </padding>
+                                                </Label>
+                                                <DatePicker editable="false" prefHeight="28.0" prefWidth="169.0">
+                                                   <VBox.margin>
+                                                      <Insets left="15.0" />
+                                                   </VBox.margin>
+                                                </DatePicker>
+                                             </children>
+                                          </VBox>
+                                          <JFXTextField disable="true" editable="false" focusColor="#00c0ef" maxWidth="524.0" minWidth="205.0" prefHeight="36.0" prefWidth="205.0" promptText="email" unFocusColor="#656464" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </JFXTextField>
+                                          <JFXTextField disable="true" editable="false" focusColor="#00c0ef" labelFloat="true" maxWidth="524.0" minWidth="252.0" prefHeight="36.0" prefWidth="252.0" promptText="Numero Attestation" unFocusColor="#656464" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </JFXTextField>
+                                          <VBox prefHeight="53.0" prefWidth="271.0" GridPane.rowIndex="6">
+                                             <children>
+                                                <Label prefHeight="33.0" prefWidth="192.0" text="Sexe" textFill="#837f7f">
+                                                   <padding>
+                                                      <Insets left="15.0" />
+                                                   </padding>
+                                                </Label>
+                                                <ChoiceBox fx:id="dataType2111" disable="true" prefHeight="26.0" prefWidth="194.0">
+                                                   <VBox.margin>
+                                                      <Insets left="15.0" />
+                                                   </VBox.margin>
+                                                </ChoiceBox>
+                                             </children>
+                                          </VBox>
+                                          <JFXTextField disable="true" editable="false" focusColor="#00c0ef" labelFloat="true" maxWidth="524.0" minWidth="205.0" prefHeight="36.0" prefWidth="205.0" promptText="telephone" unFocusColor="#656464" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </JFXTextField>
+                                          <JFXTextField disable="true" editable="false" focusColor="#00c0ef" labelFloat="true" maxWidth="524.0" minWidth="188.0" prefHeight="36.0" prefWidth="188.0" promptText="Centre" unFocusColor="#656464" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </JFXTextField>
+                                          <JFXTextField disable="true" editable="false" focusColor="#00c0ef" labelFloat="true" maxWidth="524.0" minWidth="252.0" prefHeight="36.0" prefWidth="252.0" promptText="Pays" unFocusColor="#656464" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </JFXTextField>
+                                          <JFXTextField disable="true" editable="false" focusColor="#00c0ef" labelFloat="true" maxWidth="524.0" minWidth="205.0" prefHeight="36.0" prefWidth="205.0" promptText="Province de Formation" unFocusColor="#656464" GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.valignment="BOTTOM">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </JFXTextField>
+                                          <VBox prefHeight="73.0" prefWidth="297.0" GridPane.rowIndex="5">
+                                             <children>
+                                                <Label prefHeight="33.0" prefWidth="192.0" text="Secteur d'activité" textFill="#837f7f">
+                                                   <padding>
+                                                      <Insets left="15.0" />
+                                                   </padding>
+                                                </Label>
+                                                <ChoiceBox fx:id="dataType21111" disable="true" prefHeight="26.0" prefWidth="196.0">
+                                                   <VBox.margin>
+                                                      <Insets left="15.0" />
+                                                   </VBox.margin>
+                                                </ChoiceBox>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="53.0" prefWidth="271.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                             <children>
+                                                <Label prefHeight="33.0" prefWidth="192.0" text="Structure" textFill="#837f7f">
+                                                   <padding>
+                                                      <Insets left="15.0" />
+                                                   </padding>
+                                                </Label>
+                                                <ChoiceBox fx:id="dataType211111" disable="true" prefHeight="26.0" prefWidth="196.0">
+                                                   <VBox.margin>
+                                                      <Insets left="15.0" />
+                                                   </VBox.margin>
+                                                </ChoiceBox>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="53.0" prefWidth="271.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                             <children>
+                                                <Label prefHeight="33.0" prefWidth="192.0" text="Type de Formateur" textFill="#837f7f">
+                                                   <padding>
+                                                      <Insets left="15.0" />
+                                                   </padding>
+                                                </Label>
+                                                <ChoiceBox fx:id="dataType21121" disable="true" prefHeight="26.0" prefWidth="194.0">
+                                                   <VBox.margin>
+                                                      <Insets left="15.0" />
+                                                   </VBox.margin>
+                                                </ChoiceBox>
+                                             </children>
+                                          </VBox>
+                                          <JFXTextField disable="true" editable="false" focusColor="#00c0ef" labelFloat="true" maxWidth="524.0" minWidth="205.0" prefHeight="36.0" prefWidth="205.0" promptText="Adresse" unFocusColor="#656464" GridPane.rowIndex="4">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </JFXTextField>
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="297.0" minWidth="10.0" prefWidth="294.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="263.0" minWidth="10.0" prefWidth="148.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="73.0" minHeight="10.0" prefHeight="65.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="70.0" minHeight="7.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="135.0" minHeight="0.0" prefHeight="57.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="111.0" minHeight="0.0" prefHeight="59.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="103.0" minHeight="6.0" prefHeight="52.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="103.0" minHeight="10.0" prefHeight="57.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="99.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                    <AnchorPane prefHeight="52.0" prefWidth="509.0">
+                                       <children>
+                                          <JFXButton layoutX="72.0" layoutY="5.0" prefHeight="33.0" prefWidth="190.0" text="Imprimer certificat">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="18.0">
+                                                   <image>
+                                                      <Image url="@../Icones/icons8_Print_48px_3.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <styleClass>
+                                                <String fx:value="hand-hover" />
+                                                <String fx:value="h5" />
+                                                <String fx:value="b" />
+                                                <String fx:value="light-gray-bg" />
+                                             </styleClass>
+                                             <effect>
+                                                <DropShadow height="10.0" radius="3.25" width="5.0" />
+                                             </effect>
+                                          </JFXButton>
+                                          <JFXButton layoutX="306.0" layoutY="7.0" onAction="#close_see" prefHeight="33.0" prefWidth="116.0" text="Fermer">
+                                             <graphic>
+                                                <ImageView fitHeight="20.0" fitWidth="18.0">
+                                                   <image>
+                                                      <Image url="@../Icones/icons8_Close_Window_52px.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                             <styleClass>
+                                                <String fx:value="hand-hover" />
+                                                <String fx:value="h5" />
+                                                <String fx:value="b" />
+                                                <String fx:value="darkened-bg" />
+                                                <String fx:value="text-white" />
+                                             </styleClass>
+                                          </JFXButton>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </VBox>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="35.0" prefHeight="0.0" prefWidth="527.0" style="-fx-font-size: 14pt; -fx-font-weight: bold;" styleClass="text-primary" text="Informations du formateur" textAlignment="CENTER" />
+                           </children>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </AnchorPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.net.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="home" fx:id="HomeContent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1250.0" stylesheets="@../Styles/home.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomeController">
+   <children>
+      <HBox prefHeight="50.0" prefWidth="1150.0" styleClass="light-gray-bg" />
+      <JFXTabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1250.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab closable="false" text="Tableau de Bord">
+               <content>
+                  <AnchorPane fx:id="dashboard" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <HBox layoutX="210.0" layoutY="21.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="305.0" prefWidth="775.0">
+                           <children>
+                              <AreaChart fx:id="mychart" prefHeight="305.0" prefWidth="855.0" title="Quelques indicateurs de 2018">
+                                <xAxis>
+                                  <CategoryAxis side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis side="LEFT" />
+                                </yAxis>
+                              </AreaChart>
+                           </children>
+                        </HBox>
+                        <Label layoutX="24.0" layoutY="33.0" text="Statistiques de 2017 et 2018">
+                           <styleClass>
+                              <String fx:value="h5" />
+                              <String fx:value="text-success" />
+                              <String fx:value="b" />
+                           </styleClass>
+                        </Label>
+                        <Label alignment="CENTER" layoutY="59.0" prefHeight="28.0" prefWidth="226.0" text="130 000 Beneficiaires">
+                           <styleClass>
+                              <String fx:value="h5" />
+                              <String fx:value="b" />
+                              <String fx:value="success-bg" />
+                              <String fx:value="hand-hover" />
+                           </styleClass>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutY="222.0" prefHeight="27.0" prefWidth="226.0" text="462 Parents">
+                           <styleClass>
+                              <String fx:value="h5" />
+                              <String fx:value="b" />
+                              <String fx:value="primary-bg" />
+                              <String fx:value="hand-hover" />
+                           </styleClass>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutY="195.0" prefHeight="27.0" prefWidth="226.0" text="3650 Jeunes">
+                           <styleClass>
+                              <String fx:value="h5" />
+                              <String fx:value="b" />
+                              <String fx:value="warning-bg" />
+                              <String fx:value="hand-hover" />
+                           </styleClass>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutY="87.0" prefHeight="27.0" prefWidth="226.0" text="100 000 élèves">
+                           <styleClass>
+                              <String fx:value="h5" />
+                              <String fx:value="b" />
+                              <String fx:value="light-blue-bg" />
+                              <String fx:value="hand" />
+                           </styleClass>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutY="114.0" prefHeight="27.0" prefWidth="226.0" text="23 000 formateurs">
+                           <styleClass>
+                              <String fx:value="h5" />
+                              <String fx:value="b" />
+                              <String fx:value="darkened-bg" />
+                              <String fx:value="text-white" />
+                              <String fx:value="hand-hover" />
+                           </styleClass>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutY="141.0" prefHeight="27.0" prefWidth="226.0" text="150 Religieux">
+                           <styleClass>
+                              <String fx:value="h5" />
+                              <String fx:value="b" />
+                              <String fx:value="light-gray-bg" />
+                              <String fx:value="hand-hover" />
+                           </styleClass>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutY="168.0" prefHeight="27.0" prefWidth="226.0" text="3500 Educateurs">
+                           <styleClass>
+                              <String fx:value="h5" />
+                              <String fx:value="b" />
+                              <String fx:value="danger-bg" />
+                              <String fx:value="hand-hover" />
+                           </styleClass>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutY="249.0" prefHeight="27.0" prefWidth="226.0" text="620 Autorité/décideurs">
+                           <styleClass>
+                              <String fx:value="h5" />
+                              <String fx:value="b" />
+                              <String fx:value="dark-warning-bg" />
+                              <String fx:value="hand-hover" />
+                           </styleClass>
+                        </Label>
+                        <AnchorPane layoutX="345.0" layoutY="328.0" prefHeight="230.0" prefWidth="230.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="123.0" prefWidth="230.0" styleClass="darkened-bg">
+                                 <children>
+                                    <ImageView fitHeight="63.0" fitWidth="63.0">
+                                       <image>
+                                          <Image url="@../Icones/icons8_Books_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="70.0" fitWidth="70.0">
+                                       <image>
+                                          <Image url="@../Icones/icons8_Copy_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="72.0" fitWidth="71.0">
+                                       <image>
+                                          <Image url="@../Icones/icons8_Hard_Working_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <JFXButton layoutX="26.0" layoutY="167.0" onAction="#goto_equip" prefHeight="33.0" prefWidth="178.0" text="Gestion des Equipements">
+                                 <graphic>
+                                    <ImageView fitHeight="17.0" fitWidth="18.0">
+                                       <image>
+                                          <Image url="@../Icones/icons8_Eye_48px_1.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="success-bg" />
+                                    <String fx:value="hand-hover" />
+                                    <String fx:value="dash-stat-btn" />
+                                 </styleClass></JFXButton>
+                              <HBox alignment="CENTER" opacity="0.82" prefHeight="123.0" prefWidth="230.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion des Equipements">
+                                       <styleClass>
+                                          <String fx:value="h4" />
+                                          <String fx:value="b" />
+                                       </styleClass>
+                                    </Text>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="light-gray-bg" />
+                                    <String fx:value="hand-hover" />
+                                    <String fx:value="dash-stat-hover" />
+                                 </styleClass>
+                              </HBox>
+                           </children>
+                           <styleClass>
+                              <String fx:value="shadowed-box" />
+                              <String fx:value="stat-box" />
+                           </styleClass>
+                        </AnchorPane>
+                        <AnchorPane layoutX="633.0" layoutY="328.0" prefHeight="230.0" prefWidth="230.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="123.0" prefWidth="230.0" styleClass="darkened-bg">
+                                 <children>
+                                    <ImageView fitHeight="71.0" fitWidth="71.0">
+                                       <image>
+                                          <Image url="@../Icones/icons8_Scorecard_96px_4.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="66.0" fitWidth="54.0">
+                                       <image>
+                                          <Image url="@../Icones/icons8_Edit_Property_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="63.0" fitWidth="63.0">
+                                       <image>
+                                          <Image url="@../Icones/icons8_Hand_With_Pen_96px_2.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <JFXButton layoutX="26.0" layoutY="167.0" onAction="#goto_act" prefHeight="33.0" prefWidth="178.0" text="Gestion des Activités">
+                                 <graphic>
+                                    <ImageView fitHeight="17.0" fitWidth="18.0">
+                                       <image>
+                                          <Image url="@../Icones/icons8_Eye_48px_1.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="success-bg" />
+                                    <String fx:value="hand-hover" />
+                                    <String fx:value="dash-stat-btn" />
+                                 </styleClass>
+                              </JFXButton>
+                              <HBox alignment="CENTER" opacity="0.82" prefHeight="123.0" prefWidth="230.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Voir vos Finances">
+                                       <styleClass>
+                                          <String fx:value="h4" />
+                                          <String fx:value="b" />
+                                       </styleClass>
+                                    </Text>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="light-gray-bg" />
+                                    <String fx:value="hand-hover" />
+                                    <String fx:value="dash-stat-hover" />
+                                 </styleClass>
+                              </HBox>
+                           </children>
+                           <styleClass>
+                              <String fx:value="shadowed-box" />
+                              <String fx:value="stat-box" />
+                           </styleClass>
+                        </AnchorPane>
+                        <AnchorPane layoutX="64.0" layoutY="328.0" prefHeight="230.0" prefWidth="230.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="123.0" prefWidth="230.0" styleClass="darkened-bg">
+                                 <children>
+                                    <ImageView fitHeight="63.0" fitWidth="63.0">
+                                       <image>
+                                          <Image url="@../Icones/icons8_Classroom_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="70.0" fitWidth="70.0">
+                                       <image>
+                                          <Image url="@../Icones/icons8_Graduate_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="72.0" fitWidth="71.0">
+                                       <image>
+                                          <Image url="@../Icones/icons8_Student_Male_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <JFXButton layoutX="26.0" layoutY="167.0" onAction="#goto_students" prefHeight="33.0" prefWidth="178.0" text="Gestion des Formateurs">
+                                 <graphic>
+                                    <ImageView fitHeight="17.0" fitWidth="18.0">
+                                       <image>
+                                          <Image url="@../Icones/icons8_Eye_48px_1.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="success-bg" />
+                                    <String fx:value="hand-hover" />
+                                    <String fx:value="dash-stat-btn" />
+                                 </styleClass>
+                              </JFXButton>
+                              <HBox alignment="CENTER" opacity="0.82" prefHeight="123.0" prefWidth="230.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion des Formateurs">
+                                       <styleClass>
+                                          <String fx:value="h4" />
+                                          <String fx:value="b" />
+                                       </styleClass>
+                                    </Text>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="light-gray-bg" />
+                                    <String fx:value="hand-hover" />
+                                    <String fx:value="dash-stat-hover" />
+                                 </styleClass>
+                              </HBox>
+                           </children>
+                           <styleClass>
+                              <String fx:value="shadowed-box" />
+                              <String fx:value="stat-box" />
+                           </styleClass>
+                        </AnchorPane>
+                        <AnchorPane layoutX="920.0" layoutY="328.0" prefHeight="230.0" prefWidth="230.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="123.0" prefWidth="230.0" styleClass="darkened-bg">
+                                 <children>
+                                    <ImageView fitHeight="70.0" fitWidth="70.0">
+                                       <image>
+                                          <Image url="@../Icones/icons8_Services_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="63.0" fitWidth="63.0">
+                                       <image>
+                                          <Image url="@../Icones/icons8_Administrative_Tools_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="63.0" fitWidth="63.0">
+                                       <image>
+                                          <Image url="@../Icones/icons8_Gears_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <JFXButton layoutX="26.0" layoutY="167.0" prefHeight="33.0" prefWidth="178.0" text="A Propos">
+                                 <graphic>
+                                    <ImageView fitHeight="17.0" fitWidth="18.0">
+                                       <image>
+                                          <Image url="@../Icones/icons8_Eye_48px_1.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="success-bg" />
+                                    <String fx:value="hand-hover" />
+                                    <String fx:value="dash-stat-btn" />
+                                 </styleClass>
+                              </JFXButton>
+                              <HBox alignment="CENTER" opacity="0.82" prefHeight="123.0" prefWidth="230.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="A propos de Service-fx">
+                                       <styleClass>
+                                          <String fx:value="h4" />
+                                          <String fx:value="b" />
+                                       </styleClass>
+                                    </Text>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="light-gray-bg" />
+                                    <String fx:value="hand-hover" />
+                                    <String fx:value="dash-stat-hover" />
+                                 </styleClass>
+                              </HBox>
+                           </children>
+                           <styleClass>
+                              <String fx:value="shadowed-box" />
+                              <String fx:value="stat-box" />
+                           </styleClass>
+                        </AnchorPane>
+                        <ImageView fitHeight="126.0" fitWidth="138.0" layoutX="1035.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icones/Sx100.png" />
+                           </image>
+                           <effect>
+                              <Shadow height="0.0" radius="0.0" width="0.0" />
+                           </effect>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="1008.0" layoutY="59.0" prefHeight="28.0" prefWidth="183.0" style="-fx-background-radius: 50;" text="SERVICE-FX 1.0">
+                           <styleClass>
+                              <String fx:value="b" />
+                              <String fx:value="success-bg" />
+                              <String fx:value="h5" />
+                           </styleClass>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="1010.0" layoutY="227.0" prefHeight="25.0" prefWidth="178.0" style="-fx-background-radius: 50;" text="Servire dans la Joie">
+                           <styleClass>
+                              <String fx:value="b" />
+                              <String fx:value="danger-bg" />
+                              <String fx:value="h5" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+          <Tab closable="false" text="Statistiques">
+               <content>
+                  <AnchorPane fx:id="statistics" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <AreaChart fx:id="classeschart" layoutX="38.0" layoutY="14.0" prefHeight="219.0" prefWidth="1130.0" title="Visualisation des données">
+                          <xAxis>
+                            <CategoryAxis label="x" side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis label="y" side="LEFT" />
+                          </yAxis>
+                        </AreaChart>
+                        <Label layoutX="59.0" layoutY="243.0" prefHeight="21.0" prefWidth="280.0" text="Visualisation sur le Tableau">
+                           <styleClass>
+                              <String fx:value="b" />
+                              <String fx:value="h5" />
+                              <String fx:value="solid-bottom" />
+                           </styleClass>
+                        </Label>
+                        <TableView fx:id="listClasses" layoutX="59.0" layoutY="273.0" prefHeight="312.0" prefWidth="570.0" tableMenuButtonVisible="true">
+                          <columns>
+                            <TableColumn fx:id="Classesnum" prefWidth="32.0" text="N°" />
+                            <TableColumn fx:id="ClasseName" prefWidth="227.0" text="Axe Horizontal" />
+                              <TableColumn fx:id="ClasseRate" prefWidth="197.0" text="Axe Vertical" />
+                          </columns>
+                        </TableView>
+                        <AnchorPane id="details" layoutX="799.0" layoutY="272.0" prefHeight="333.0" prefWidth="353.0" style="-fx-background-color: white;" styleClass="shadowed-box">
+                           <children>
+                              <GridPane layoutX="21.0" layoutY="10.0" prefHeight="270.0" prefWidth="332.0">
+                                 <children>
+                                    <Label prefHeight="27.0" prefWidth="158.0" styleClass="b" text="Pays" GridPane.rowIndex="3" />
+                                    <ChoiceBox fx:id="niveaux" prefHeight="26.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <Label prefHeight="27.0" prefWidth="158.0" styleClass="b" text="Sexe" GridPane.rowIndex="9" />
+                                    <ChoiceBox fx:id="periode" prefHeight="26.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                    <Label prefHeight="27.0" prefWidth="178.0" styleClass="b" text="Axe Horizontal" GridPane.rowIndex="1" />
+                                    <ChoiceBox fx:id="dataType" prefHeight="26.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                    <Label prefHeight="27.0" prefWidth="158.0" styleClass="b" text="Axe Vertical" GridPane.rowIndex="2" />
+                                    <ChoiceBox fx:id="years" prefHeight="26.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label prefHeight="27.0" prefWidth="158.0" styleClass="b" text="Tranche d'age" GridPane.rowIndex="10" />
+                                    <ChoiceBox fx:id="periode1" prefHeight="26.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                    <Label prefHeight="27.0" prefWidth="158.0" styleClass="b" text="Provinces" GridPane.rowIndex="4" />
+                                    <ChoiceBox fx:id="niveaux1" prefHeight="26.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <Label prefHeight="27.0" prefWidth="158.0" styleClass="b" text="Centres" GridPane.rowIndex="5" />
+                                    <ChoiceBox fx:id="niveaux11" prefHeight="26.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <Label prefHeight="27.0" prefWidth="158.0" styleClass="b" text="Secteurs" GridPane.rowIndex="6" />
+                                    <ChoiceBox fx:id="niveaux111" prefHeight="26.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <Label prefHeight="27.0" prefWidth="158.0" styleClass="b" text="Structures" GridPane.rowIndex="7" />
+                                    <ChoiceBox fx:id="niveaux1111" prefHeight="26.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <Label prefHeight="27.0" prefWidth="158.0" styleClass="b" text="Beneficiere" GridPane.rowIndex="8" />
+                                    <ChoiceBox fx:id="dataType1" prefHeight="26.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                    <Label prefHeight="27.0" prefWidth="178.0" styleClass="b" text="Année" />
+                                    <ChoiceBox fx:id="dataType2" prefHeight="26.0" prefWidth="206.0" GridPane.columnIndex="1" />
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="179.0" minWidth="10.0" prefWidth="130.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="263.0" minWidth="10.0" prefWidth="263.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <JFXButton layoutX="84.0" layoutY="292.0" prefHeight="30.0" prefWidth="207.0" text="voir la statistique">
+                                 <styleClass>
+                                    <String fx:value="hand-hover" />
+                                    <String fx:value="h5" />
+                                    <String fx:value="b" />
+                                    <String fx:value="primary-bg" />
+                                 </styleClass>
+                                 <graphic>
+                                    <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icones/icons8_Hand_Up_48px_1.png" />
+                                       </image>
+                                       <effect>
+                                          <DropShadow height="35.83" radius="12.225" spread="0.66" width="15.07" />
+                                       </effect>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </AnchorPane>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="799.0" layoutY="241.0" prefHeight="25.0" prefWidth="353.0" style="-fx-background-radius: 20;" text="Créer vos statistiques">
+                           <styleClass>
+                              <String fx:value="h5" />
+                              <String fx:value="b" />
+                              <String fx:value="text-white" />
+                              <String fx:value="darkened-bg" />
+                           </styleClass>
+                        </Label>
+                     </children></AnchorPane>
+               </content></Tab>
+        </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

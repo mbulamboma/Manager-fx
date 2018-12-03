@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.validation.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="loaderPane" prefHeight="272.0" prefWidth="500.0" styleClass="window" stylesheets="@../Styles/loading.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.loaderController">
+   <children>
+      <Label layoutX="174.0" layoutY="81.0" prefHeight="37.0" prefWidth="321.0" styleClass="logo" text="ervice-fx 1.0">
+         <effect>
+            <DropShadow />
+         </effect></Label>
+      <Label layoutX="204.0" layoutY="126.0" prefHeight="18.0" prefWidth="131.0" styleClass="comments" text="Servire dans la joie">
+         <effect>
+            <DropShadow spread="0.45" />
+         </effect></Label>
+      <ProgressBar layoutY="215.0" minHeight="2.0" minWidth="500.0" prefHeight="5.0" prefWidth="473.0">
+         <styleClass>
+            <String fx:value="ProgressBar" />
+            <String fx:value="manage-bg" />
+         </styleClass>
+      </ProgressBar>
+      <Label layoutX="6.0" layoutY="222.0" prefHeight="21.0" prefWidth="486.0" styleClass="description" text="service-fx is an open source software designed by the infinity-team and licensed by MIT" />
+      <Label layoutX="6.0" layoutY="194.0" prefHeight="21.0" prefWidth="359.0" styleClass="text-white" text="loading..." textFill="WHITE" />
+      <Label layoutX="5.0" layoutY="239.0" prefHeight="21.0" prefWidth="492.0" styleClass="description" text="common licence and protected by scev. It aims to change life of a manager within the office." />
+      <ImageView layoutX="74.0" layoutY="62.0">
+         <image>
+            <Image url="@../Icones/Sx100.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

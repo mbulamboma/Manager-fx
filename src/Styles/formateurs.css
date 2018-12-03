@@ -1,0 +1,219 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15 nov. 2018, 09:29:00
+    Author     : mbula
+*/
+.tab{
+    -fx-cursor: hand; 
+} 
+
+.jfx-tab-pane:top .tab-header-area .tab-header-background{
+    -fx-background-color: #686868;  
+}
+
+/** Backgrounds **/
+
+.success-bg{
+    -fx-background-color: #16987e;
+    -fx-text-fill: white;
+}
+.danger-bg{
+    -fx-background-color: #d9534f;
+    -fx-text-fill: white;
+}
+.blue-green-bg{
+    -fx-background-color: #1cb2b2;
+    -fx-text-fill: white;
+}
+.dark-blue-green-bg{
+    -fx-background-color: #147f7f;
+    -fx-text-fill: white;
+}
+.yellow-bg{
+    -fx-background-color: #ffdd38;
+    -fx-text-fill: white;
+}
+.dark-yellow-bg{
+    -fx-background-color: #e5bf00;
+    -fx-text-fill: white;
+}
+.warning-bg{
+    -fx-background-color: #f8ac59;
+    -fx-text-fill: white;
+}
+.primary-bg{
+    -fx-background-color: #337ab7;
+    -fx-text-fill: white;
+}
+.light-gray-bg{
+    -fx-background-color: #f7f7f7;
+}
+.dark-danger-bg{
+    -fx-background-color:  #c74433;
+}
+.dark-warning-bg{
+    -fx-text-fill: white;
+    -fx-background-color: #dd8118;
+}
+.dark-success-bg{ 
+    -fx-text-fill: white;
+    -fx-background-color: #106449;
+}
+.dark-primary-bg{ 
+    -fx-text-fill: white;
+    -fx-background-color: #00588c;
+}
+.light-blue-bg{
+    -fx-background-color: #00a8d8;
+    -fx-text-fill: white;
+}
+.darkened-bg{
+    -fx-background-color: #2f4050 ;
+}
+
+.dark-purple{
+    -fx-background-color: rgba(54, 0, 71, 225);
+}
+/** Titles */
+.h1 {
+  -fx-font-size: 36;
+} 
+.h2 {
+  -fx-font-size: 30;
+} 
+.h3 {
+  -fx-font-size: 24;
+} 
+.h4 {
+  -fx-font-size: 18;
+} 
+.h5 {
+  -fx-font-size: 14;
+} 
+.h6 {
+  -fx-font-size: 12; 
+}
+
+/** Text-colored */
+.text-primary {
+  -fx-text-fill: #337ab7;
+} 
+.text-success {
+  -fx-text-fill: #3c763d;
+} 
+.text-info {
+  -fx-text-fill: #31708f;
+} 
+.text-warning {
+  -fx-text-fill: #8a6d3b;
+} 
+.text-light-warning{
+    -fx-text-fill: #f69b0e;    
+}
+.text-danger {
+  -fx-text-fill: #a94442;
+}
+.text-white{
+    -fx-text-fill: white;
+}
+
+/**taille des text **/
+.b{ 
+    -fx-font-weight: bold; 
+}
+.i{
+    -fx-font-style: italic;    
+}
+
+/** Limit of Backgrounds **/
+.solid-bottom{
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: gray;
+}
+
+/** Shadowed box **/
+.shadowed-box {  
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);
+    -fx-padding: 0 0 0 0; 
+}
+
+.table-view{
+    -fx-table-cell-border-color: transparent;
+    -fx-effect: dropshadow( gaussian,rgba(0,0,0,0.16),6,0.5,0,1);
+    -fx-background-radius: 3;
+    -fx-background-color: white;
+    -fx-background-insets: 0;
+}
+
+.table-view .column-header, .table-view .filler, .table-view>*.column-header-background>*.show-hide-columns-button{
+    -fx-margin: -1 0 0 0;
+    -fx-background-color: white;
+    -fx-border-width: 0 1 1 0;
+    -fx-border-color: rgba(1,1,1,0.15);
+}
+
+/** search box**/
+.search-box {	
+    -fx-background-color: -fx-shadow-highlight-color, -fx-text-box-border, -fx-control-inner-background;
+    -fx-background-insets: -1, -1, 0;
+    -fx-background-radius: 14, 14, 14;    
+    -fx-text-fill: -fx-text-inner-color;
+    -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);
+    -fx-cursor: text;
+}
+
+.search-box:focused {
+    -fx-background-color: -fx-focus-color, -fx-control-inner-background;
+    -fx-background-insets: -1.4, 0;
+    -fx-background-radius: 14;
+}
+
+/** Choice Box **/
+ChoiceBox{
+    -fx-background-color: transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color:#999999;
+}
+ChoiceBox .label .text{
+    -fx-text-fill:#999999; 
+}
+ChoiceBox .open-button .arrow{
+    -fx-background-color: red;
+    -fx-pref-width: 10;
+    -fx-pref-height: 5;
+}
+ChoiceBox:hover{
+    -fx-cursor: hand;
+}
+
+
+/** Hand-hover **/
+.hand-hover:hover{
+    -fx-cursor: hand;
+    -fx-opacity: 0.9;
+}
+
+/** Date Picker **/
+DatePicker{
+    -fx-background-color: transparent;
+    -fx-border-width: 0 0 3 0;
+    -fx-border-color: #cccccc;
+}
+DatePicker .date-picker-display-node:focused, DatePicker .date-picker-display-node{
+    -fx-background-color: transparent;
+    -fx-border-width: 0 0 0 0;
+    -fx-border-color: #cccccc;
+}
+
+DatePicker .arrow-button, DatePicker .arrow-button:hover{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+DatePicker .arrow-button .arrow{
+    -fx-background-color: red;
+}

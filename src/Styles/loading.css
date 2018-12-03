@@ -1,0 +1,37 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14 nov. 2018, 15:51:20
+    Author     : mbula
+*/
+.window{
+    -fx-background-color: #2f4050 ;
+}
+.logo{
+    -fx-text-fill: #ffc107;
+    -fx-font-size: 36;
+    -fx-font-weight: bold;
+}
+.comments{
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+}
+.description{
+    -fx-text-fill: white;
+    -fx-font-size: 12;
+}
+ProgressBar > .track,
+.ProgressBar > .bar {
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+}
+
+.manage-bg > .bar{
+    -fx-background-insets: 0;
+    -fx-background-color: ffc107;
+}
+
+

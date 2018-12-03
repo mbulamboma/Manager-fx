@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1250.0" styleClass="window" stylesheets="@../Styles/template.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.TemplateController">
+   <children>
+      <AnchorPane fx:id="Content" layoutX="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1250.0" styleClass="white-bg" />
+      <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#goto_home" prefHeight="50.0" prefWidth="50.0">
+         <children>
+            <Label styleClass="logo" text="SC+" />
+         </children>
+         <styleClass>
+            <String fx:value="warning-bg" />
+            <String fx:value="logo-box" />
+         </styleClass>
+      </HBox>
+      <JFXButton id="home" fx:id="home_btn" alignment="CENTER" contentDisplay="CENTER" ellipsisString="Tableau de Bord" layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#goto_home" prefHeight="50.0" prefWidth="50.0" styleClass="default-button" text=" " textAlignment="CENTER">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../Icones/icons8_Home_35px_1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton id="students" fx:id="form_btn" contentDisplay="CENTER" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#goto_formateurs" prefHeight="50.0" prefWidth="50.0" styleClass="default-button" text=" ">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../Icones/icons8_Student_Male_35px_1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton id="employees" fx:id="equip_btn" contentDisplay="CENTER" layoutY="150.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#goto_equip" prefHeight="50.0" prefWidth="50.0" styleClass="default-button" text=" ">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0">
+               <image>
+                  <Image url="@../Icones/icons8_Books_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton id="deliberation" fx:id="delibe_btn" contentDisplay="CENTER" layoutY="200.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#goto_act" prefHeight="50.0" prefWidth="50.0" styleClass="default-button" text=" ">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../Icones/icons8_Training_35px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

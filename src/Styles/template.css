@@ -1,0 +1,42 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14 nov. 2018, 16:25:37
+    Author     : mbula
+*/
+
+/* Logo */
+.logo{
+    -fx-font-size: 18;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+.logo-box:hover{
+    -fx-opacity: 0.92;
+}
+/* first Anchor-pane Bg */
+.window{
+    -fx-background-color: #2f4050 ;
+}
+/* Different backgrounds */
+.white-bg{
+    -fx-background-color: white;
+}
+.warning-bg{
+    -fx-background-color: #f8ac59;
+    -fx-text-fill: white;
+}
+/**Buttons**/
+.default-button{
+    -fx-background-radius: 0;
+    -fx-border-radius: 0; 
+    -fx-cursor: hand;
+    -fx-alignment: CENTER;   
+}
+.default-button:hover{
+    -fx-background-color: #999999;
+} 

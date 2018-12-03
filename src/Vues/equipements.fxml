@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1250.0" stylesheets="@../Styles/formateurs.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.EquipementsController">
+   <children>
+      <JFXTabPane prefHeight="650.0" prefWidth="1250.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab text="Gestions des Equipements">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" layoutX="482.0" layoutY="36.0" prefHeight="85.0" prefWidth="258.0">
+                           <children>
+                              <VBox prefHeight="105.0" prefWidth="20.0" styleClass="dark-danger-bg">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                              <ImageView fitHeight="64.0" fitWidth="66.0">
+                                 <image>
+                                    <Image url="@../Icones/icons8_Copy_96px.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label prefHeight="80.0" prefWidth="161.0" text="500 programmes non formel sorties" textAlignment="CENTER" wrapText="true">
+                                 <styleClass>
+                                    <String fx:value="h4" />
+                                    <String fx:value="b" />
+                                    <String fx:value="text-white" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                           <styleClass>
+                              <String fx:value="danger-bg" />
+                              <String fx:value="shadowed-box" />
+                           </styleClass>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="818.0" layoutY="36.0" prefHeight="85.0" prefWidth="275.0">
+                           <children>
+                              <VBox prefHeight="105.0" prefWidth="19.0" styleClass="dark-warning-bg" />
+                              <ImageView fitHeight="66.0" fitWidth="64.0">
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                                 <image>
+                                    <Image url="@../Icones/icons8_Books_96px.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="85.0" prefWidth="171.0" text="300 livres vendues en 2018" textAlignment="CENTER" wrapText="true">
+                                 <styleClass>
+                                    <String fx:value="h4" />
+                                    <String fx:value="b" />
+                                    <String fx:value="text-white" />
+                                 </styleClass>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <styleClass>
+                              <String fx:value="warning-bg" />
+                              <String fx:value="shadowed-box" />
+                           </styleClass>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="142.0" layoutY="36.0" prefHeight="83.0" prefWidth="283.0">
+                           <children>
+                              <VBox prefHeight="105.0" prefWidth="20.0" styleClass="dark-primary-bg" />
+                              <ImageView fitHeight="71.0" fitWidth="67.0">
+                                 <image>
+                                    <Image url="@../Icones/icons8_Book_96px.png" />
+                                 </image>
+                              </ImageView>
+                              <Label prefHeight="55.0" prefWidth="181.0" text="3000 programmes scolaires sorties" textAlignment="CENTER" wrapText="true">
+                                 <styleClass>
+                                    <String fx:value="h4" />
+                                    <String fx:value="b" />
+                                    <String fx:value="text-white" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                           <styleClass>
+                              <String fx:value="primary-bg" />
+                              <String fx:value="shadowed-box" />
+                           </styleClass>
+                        </HBox>
+                        <TableView layoutX="25.0" layoutY="209.0" prefHeight="392.0" prefWidth="595.0" tableMenuButtonVisible="true">
+                           <columns>
+                              <TableColumn prefWidth="83.0" text="Date" />
+                              <TableColumn prefWidth="113.0" text="type de document" />
+                              <TableColumn prefWidth="101.0" text="Qtité Entrée" />
+                              <TableColumn prefWidth="141.0" text="Qtité Sortie" />
+                              <TableColumn prefWidth="129.0" text="Coût" />
+                           </columns>
+                        </TableView>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="26.0" layoutY="148.0" prefHeight="25.0" prefWidth="599.0" style="-fx-background-radius: 20;" text="Liste des Entrées / Sorties">
+                           <styleClass>
+                              <String fx:value="h5" />
+                              <String fx:value="b" />
+                              <String fx:value="text-white" />
+                              <String fx:value="darkened-bg" />
+                           </styleClass>
+                        </Label>
+                        <TextField layoutX="366.0" layoutY="177.0" prefHeight="25.0" prefWidth="259.0" promptText="chercher une sortie" styleClass="search-box" />
+                        <VBox alignment="CENTER" layoutX="648.0" layoutY="166.0" prefHeight="436.0" prefWidth="510.0" spacing="15.0" style="-fx-background-color: white;" styleClass="shadowed-box">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="0.0" prefWidth="527.0" style="-fx-font-size: 14pt; -fx-font-weight: bold;" text="Enregistrer une transaction" textAlignment="CENTER" />
+                              <VBox>
+                                 <children>
+                                    <Label prefHeight="33.0" prefWidth="230.0" text="Date de la Transaction" textFill="#837f7f">
+                                       <padding>
+                                          <Insets left="15.0" />
+                                       </padding>
+                                    </Label>
+                                    <DatePicker prefHeight="28.0" prefWidth="440.0">
+                                       <VBox.margin>
+                                          <Insets left="50.0" />
+                                       </VBox.margin>
+                                    </DatePicker>
+                                 </children>
+                              </VBox>
+                              <JFXTextField focusColor="#00c0ef" labelFloat="true" maxWidth="524.0" minWidth="477.0" prefHeight="40.0" prefWidth="477.0" promptText="Quantité Entréé" unFocusColor="#656464">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font> 
+                              </JFXTextField>
+                              <JFXTextField focusColor="#00c0ef" labelFloat="true" layoutX="10.0" layoutY="45.0" maxWidth="524.0" minWidth="-Infinity" prefHeight="40.0" prefWidth="350.0" promptText="Quantité Sortie" unFocusColor="#656464">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font> 
+                              </JFXTextField>
+                              <JFXTextField focusColor="#00c0ef" labelFloat="true" layoutX="10.0" layoutY="85.0" maxWidth="524.0" minWidth="350.0" prefHeight="40.0" prefWidth="350.0" promptText="Cout Total" unFocusColor="#656464">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font> 
+                              </JFXTextField>
+                              <VBox>
+                                 <children>
+                                    <Label prefHeight="33.0" prefWidth="230.0" text="Type de Document" textFill="#837f7f">
+                                       <padding>
+                                          <Insets left="15.0" />
+                                       </padding>
+                                    </Label>
+                                    <JFXComboBox prefHeight="33.0" prefWidth="492.0">
+                                       <padding>
+                                          <Insets left="50.0" />
+                                       </padding>
+                                    </JFXComboBox>
+                                 </children>
+                              </VBox>
+                              <JFXButton onAction="#show_error" prefHeight="33.0" prefWidth="157.0" text="Ajouter">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="18.0">
+                                       <image>
+                                          <Image url="@../Icones/icons8_Plus_52px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <styleClass>
+                                    <String fx:value="hand-hover" />
+                                    <String fx:value="h5" />
+                                    <String fx:value="b" />
+                                    <String fx:value="danger-bg" />
+                                 </styleClass>
+                              </JFXButton>
+                           </children>
+                        </VBox>
+                        <AnchorPane fx:id="erreur_msg" layoutX="393.0" layoutY="177.0" prefHeight="183.0" prefWidth="388.0" style="-fx-background-color: white;" visible="false">
+                           <children>
+                              <JFXButton layoutX="341.0" layoutY="1.0" onAction="#close_msg" prefHeight="33.0" prefWidth="40.0" styleClass="hand-hover" text=" ">
+                                 <graphic>
+                                    <ImageView fitHeight="23.0" fitWidth="24.0">
+                                       <image>
+                                          <Image url="@../Icones/icons8_Delete_96px_2.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <Label contentDisplay="CENTER" layoutX="151.0" layoutY="10.0" prefHeight="27.0" prefWidth="132.0" style="-fx-font-size: 14pt; -fx-font-weight: bold;" styleClass="text-danger" text="Erreur !!!!!" />
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="22.0" layoutY="56.0" prefHeight="72.0" prefWidth="340.0" text="Un problème est survenu lors de l'enregistrement. Reessayer ou si le probleme persiste, veuillez contacter les constructeurs" textAlignment="CENTER" wrapText="true">
+                                 <styleClass>
+                                    <String fx:value="h5" />
+                                    <String fx:value="b" />
+                                 </styleClass>
+                              </Label>
+                              <JFXButton layoutX="166.0" layoutY="133.0" onAction="#close_msg" prefHeight="30.0" prefWidth="66.0" text="fermer">
+                                 <styleClass>
+                                    <String fx:value="hand-hover" />
+                                    <String fx:value="h5" />
+                                    <String fx:value="b" />
+                                    <String fx:value="light-gray-bg" />
+                                 </styleClass>
+                                 <effect>
+                                    <DropShadow height="10.0" radius="4.5" width="10.0" />
+                                 </effect>
+                              </JFXButton>
+                           </children>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>
